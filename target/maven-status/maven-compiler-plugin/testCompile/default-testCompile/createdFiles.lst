@@ -1,0 +1,4 @@
+com/url/shorten/UrlShortenerApplicationTests.class
+com/url/shorten/common/ShortUrlGeneratorTest.class
+com/url/shorten/service/UrlShortenServiceTest.class
+com/url/shorten/common/UrlValidatorTest.class
