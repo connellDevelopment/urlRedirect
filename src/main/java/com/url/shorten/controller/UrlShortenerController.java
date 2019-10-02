@@ -20,7 +20,7 @@ import java.util.List;
 
 
 /**
- * Created by paraicconnell on 30/9/19.
+ * Main API controller for URL shortening related operations.
  */
 
 @RestController
@@ -29,16 +29,12 @@ public class UrlShortenerController {
 
     private final UrlShortenService urlShortenService;
 
-    /**
-     *
-     * @param service
-     */
     public UrlShortenerController(UrlShortenService service) {
         this.urlShortenService = service;
     }
 
     /**
-     *
+     * Add new URL
      * @param longUrl
      * @return
      */
@@ -62,6 +58,12 @@ public class UrlShortenerController {
         }
     }
 
+    /**
+     * Redirect to long URL, given short URL
+     * @param shortUrl
+     * @param resp
+     * @throws Exception
+     */
     @RequestMapping(method = RequestMethod.POST,
             value = "/redirect",
             produces = MediaType.APPLICATION_JSON_VALUE)
@@ -83,7 +85,7 @@ public class UrlShortenerController {
     }
 
     /**
-     * API Endpoint to list all persisted URLs
+     * API Endpoint to list all currently persisted URLs
      * @return List<UrlModel>
      */
     @RequestMapping(method = RequestMethod.GET,

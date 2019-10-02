@@ -13,7 +13,7 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 /**
- * Created by paraicconnell on 1/10/19.
+ * Unit test for UrlValidator - which validates URls, surprisingly enough.
  */
 public class UrlValidatorTest {
 

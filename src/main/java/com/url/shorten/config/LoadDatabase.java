@@ -16,7 +16,9 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-
+/**
+ * Load temporary in memory database for purpose of illustration.
+ */
 @Configuration
 @Slf4j
 class LoadDatabase {

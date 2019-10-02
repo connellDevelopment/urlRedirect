@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Optional;
 
 /**
- * Created by paraicconnell on 30/9/19.
+ * URL persistence operations
  */
 @Repository
 public interface UrlRepository extends JpaRepository<UrlModel, Long> {

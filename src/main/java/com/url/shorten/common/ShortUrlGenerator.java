@@ -15,7 +15,7 @@ import org.slf4j.LoggerFactory;
 import java.nio.charset.StandardCharsets;
 
 /**
- * Created by paraicconnell on 1/10/19.
+ * Generate shortened URL from oroginal long URL.
  */
 public class ShortUrlGenerator {
 

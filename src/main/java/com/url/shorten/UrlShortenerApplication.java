@@ -12,10 +12,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
  * 2) Implement forwarding of short URLs to the original ones
  * 3) There should be some form of persistent storage
  * 4) The application should be distributed as one or more Docker images
- *
- * Additional requirements:
- * 5) Design and implement an API for gathering different statistics
- *
+ **
  */
 @SpringBootApplication
 @EnableTransactionManagement

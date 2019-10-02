@@ -9,7 +9,7 @@
 package com.url.shorten.exceptions;
 
 /**
- * Created by paraicconnell on 1/10/19.
+ * Specific exception catering for when a short URL is queried.
  */
 public class InvalidShortUrlException extends Throwable {
 

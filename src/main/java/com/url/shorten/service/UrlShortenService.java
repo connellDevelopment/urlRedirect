@@ -23,7 +23,7 @@ import java.util.List;
 import java.util.Optional;
 
 /**
- * Created by paraicconnell on 1/10/19.
+ * URL service
  */
 @Service
 public class UrlShortenService {
@@ -55,17 +55,15 @@ public class UrlShortenService {
 
         StringBuilder sb = new StringBuilder (ORG_URL_PREFIX);
         sb.append(ShortUrlGenerator.shortenUrl(longUrl));
-
         urlRepository.save(new UrlModel(longUrl, sb.toString()));
 
         return sb.toString();
     }
 
-
     /**
-     *
+     * Given a short URL, return a previously persisted LongURL
      * @param shortUrl
-     * @return
+     * @return String
      */
     public String redirect(String shortUrl) throws InvalidShortUrlException{
         UrlModel url = urlRepository.findByShortUrl(shortUrl).orElseThrow(() -> new InvalidShortUrlException(shortUrl)) ;
@@ -73,7 +71,7 @@ public class UrlShortenService {
     }
 
     /**
-     *
+     * List all currently persisted URLs
      * @return
      * @throws InvalidShortUrlException
      */

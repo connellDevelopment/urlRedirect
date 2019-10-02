@@ -9,7 +9,7 @@
 package com.url.shorten.exceptions;
 
 /**
- * Created by paraicconnell on 1/10/19.
+ * Specific exception catering for when a long URL has already been submitted & persisted.
  */
 public class UrlAlreadyAddedException extends Throwable {
 

@@ -17,7 +17,7 @@ import java.net.URISyntaxException;
 import java.net.URL;
 
 /**
- * Created by paraicconnell on 1/10/19.
+ *  Validate URL.
  */
 public class UrlValidator {
     private static final Logger LOGGER = LoggerFactory.getLogger(UrlShortenerController.class);

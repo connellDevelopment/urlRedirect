@@ -18,7 +18,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 /**
- *  Data object to represent a URL object, pertinent to this task.
+ *  Data object to represent a URL object.
  */
 @Data
 @Entity

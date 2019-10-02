@@ -13,7 +13,7 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 /**
- * Created by paraicconnell on 1/10/19.
+ * Unit test to test generating short URL of a based on long url.
  */
 public class ShortUrlGeneratorTest {
     private final String longUrl = "http://www.java2s.com/Open-Source/Maven_Repository/Java_Library/guava/guava_20_0.html";
